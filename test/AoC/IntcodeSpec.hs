@@ -1,5 +1,5 @@
 
-module AoC.IntcodeSpec where
+module AoC.IntcodeSpec (spec) where
 
 
 import Test.Hspec
@@ -11,3 +11,5 @@ test_output_day2 = array (0,11) [(0,3500),(1,9),(2,10),(3,70),(4,2),(5,3),(6,11)
 spec = describe "Day2" $ do
   it "should correctly process the aoc day2 example" $
     (processIntcode test_input_day2 0) `shouldBe`  test_output_day2
+  it "should provide a generik string to Intcode parser" $
+     (parse "1,2,3") `shouldBe` listArray (0,2) [1,2,3]

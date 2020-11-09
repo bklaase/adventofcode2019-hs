@@ -13,7 +13,8 @@ common common
 
 library
   exposed-modules:     AoC.Lib, AoC.Intcode,
-                       Solutions.Day1
+                       Solutions.Day1,
+                       Solutions.Day2,
   build-depends:       base ^>=4.14.1.0,
                        time ^>=1.9.3,
                        array ^>=0.5.4.0
@@ -29,7 +30,9 @@ executable test
   import:              common
   hs-source-dirs:      ./test
   main-is:             Spec.hs
-  other-modules:       AoC.IntcodeSpec
+  other-modules:       AoC.IntcodeSpec,
+                       Solutions.Day1Spec,
+                       Solutions.Day2Spec,
   build-depends:       hspec ^>=2.7.4,
                        array ^>=0.5.4.0
 

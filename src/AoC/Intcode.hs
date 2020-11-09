@@ -26,3 +26,7 @@ processOperation c p
         proc f = c // [(p3, f p1 p2)]
 
 
+parse :: String -> Intcode
+parse s = listArray (0, length l - 1) l
+  where l = read input :: [Int]
+        input = "[" ++ s ++ "]"

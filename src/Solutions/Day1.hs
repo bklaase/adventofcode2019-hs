@@ -1,4 +1,4 @@
-module Solutions.Day1 (day1) where
+module Solutions.Day1 where
 
 import System.IO
 import qualified AoC.Lib as L
